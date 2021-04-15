@@ -25,3 +25,4 @@ public class PersonDetailActivity extends AppCompatActivity {
         email.setText(user.getEmail());
         city.setText(user.getCity());
     }
+}

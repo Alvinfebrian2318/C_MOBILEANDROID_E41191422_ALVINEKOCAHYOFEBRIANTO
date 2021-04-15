@@ -1,5 +1,7 @@
 package com.example.intent;
 
+
+
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.database.Cursor;
@@ -60,20 +62,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.buttonPindahActivity:
-                Intent moveIntent = new Intent(this, MoveActivity.class);
-                startActivity(moveIntent);
+                Intent intentPindahActivity = new Intent(this, MoveActivity.class);
+                startActivity(intentPindahActivity);
                 break;
             case R.id.buttonPindahActivityDenganData:
                 Intent moveWithDataIntent = new Intent(this, MoveWithDataActivity.class);
-                moveWithDataIntent.putExtra("extra_name", "DicodingAcademy Boy");
-                moveWithDataIntent.putExtra("extra_age", 5);
+                moveWithDataIntent.putExtra("extra_name", "Alvin Eko Cahyo Febrianto");
+                moveWithDataIntent.putExtra("extra_age", 20);
                 startActivity(moveWithDataIntent);
                 break;
             case R.id.buttonPindahActivityDenganObject:
-
+                Intent intentPindahActivityObject = new Intent(this, MoveWithObject.class);
+                startActivity(intentPindahActivityObject);
                 break;
             case R.id.buttonDialNumber:
-                String phoneNumber = "089987564231";
+                String phoneNumber = "082302228538";
                 Intent dialphone = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:"+phoneNumber));
                 startActivity(dialphone);
                 break;
@@ -88,7 +91,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(Intent.createChooser(share, "share link"));
                 break;
             case R.id.buttonSMS:
-                Intent sms = new Intent(Intent.ACTION_SENDTO, Uri.parse("smsto: 098765564543"));
+                Intent sms = new Intent(Intent.ACTION_SENDTO, Uri.parse("smsto: 082302228538"));
                 sms.putExtra("sms_body", "Assalamualaikum");
                 startActivity(sms);
                 break;

@@ -1,10 +1,10 @@
 package com.example.intent;
 
 
-        import android.os.Bundle;
-        import android.widget.TextView;
+import android.os.Bundle;
+import android.widget.TextView;
 
-        import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MoveWithDataActivity extends AppCompatActivity {
 

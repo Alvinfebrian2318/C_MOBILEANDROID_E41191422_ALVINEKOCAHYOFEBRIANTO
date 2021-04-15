@@ -1,11 +1,12 @@
 package com.pintarngoding.myintentapp;
 
-        import android.os.Parcel;
-        import android.os.Parcelable;
+import android.os.Parcel;
+import android.os.Parcelable;
 
 public class Person implements Parcelable {
+
     private String name;
-    private int age;
+    private Integer  age;
     private String email;
     private String city;
 
@@ -41,6 +42,14 @@ public class Person implements Parcelable {
         this.city = city;
     }
 
+    public Person(String name, Integer age, String email, String city){
+        this.name = name;
+        this.age = age;
+        this.email = email;
+        this.city = city;
+
+    }
+
     @Override
     public int describeContents() {
         return 0;
@@ -54,8 +63,7 @@ public class Person implements Parcelable {
         dest.writeString(this.city);
     }
 
-    public Person() {
-    }
+
 
     protected Person(Parcel in) {
         this.name = in.readString();

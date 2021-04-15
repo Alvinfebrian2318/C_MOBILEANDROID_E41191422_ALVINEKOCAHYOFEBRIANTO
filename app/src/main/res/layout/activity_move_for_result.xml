@@ -4,68 +4,39 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="10dp"
     android:orientation="vertical"
     tools:context=".MoveForResultActivity">
 
-    <Button
-        android:id="@+id/buttonPindahActivity"
-        android:text="Pindah Activity"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <Button
-        android:id="@+id/buttonPindahActivityDenganData"
-        android:text="Pindah Activity Dengan Data"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <Button
-        android:id="@+id/buttonPindahActivityDenganObject"
-        android:text="Pindah Activity Dengan Object"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <Button
-        android:id="@+id/buttonDialNumber"
-        android:text="Dial A Number"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <Button
-        android:id="@+id/buttonMaps"
-        android:text="Intent Maps"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <Button
-        android:id="@+id/buttonShare"
-        android:text="Intent Share Text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <Button
-        android:id="@+id/buttonSMS"
-        android:text="Intent Kirim SMS"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <Button
-        android:id="@+id/buttonGetContachPhone"
-        android:text="Ambil Kontak Phone"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <Button
-        android:id="@+id/buttonPindahActivityUntukResult"
-        android:text="Pindah Activity Untuk Result"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
     <TextView
-        android:id="@+id/textViewResult"
-        android:gravity="center"
-        android:text="Hasil dari Activity"
+        android:text="Pilih angka yang anda suka"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupAngka"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioButton100"
+            android:text="95"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/radioButton50"
+            android:text="30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/radioButton32"
+            android:text="28"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:text="Submit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 

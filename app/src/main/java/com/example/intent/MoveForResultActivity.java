@@ -1,6 +1,7 @@
 package com.example.intent;
 
 
+
 import android.content.Intent;
 
 import android.os.Bundle;
@@ -33,13 +34,13 @@ public class MoveForResultActivity extends AppCompatActivity implements View.OnC
             int value = 0;
             switch (radioGroupAngka.getCheckedRadioButtonId()){
                 case R.id.radioButton100:
-                    value = 100;
+                    value = 95;
                     break;
                 case R.id.radioButton50:
-                    value = 50;
+                    value = 30;
                     break;
                 case R.id.radioButton32:
-                    value = 32;
+                    value = 28;
                     break;
             }
             Intent resultIntent = new Intent();
@@ -49,3 +50,4 @@ public class MoveForResultActivity extends AppCompatActivity implements View.OnC
         }
     }
 }
+

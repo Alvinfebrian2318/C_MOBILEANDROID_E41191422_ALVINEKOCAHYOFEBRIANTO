@@ -8,7 +8,13 @@
 
     <TextView
         android:id="@+id/tvdataintent"
-        android:text="ini activity yang menerima data"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text=" INI ACTIVITY MENERIMA DATA "
+        android:typeface="serif"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
+
 </RelativeLayout>

@@ -7,8 +7,13 @@
     tools:context=".MoveActivity">
 
     <TextView
-        android:text="ini MoveActivity"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text=" INI MOVE ACTIVITY "
+        android:typeface="serif"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/teks1"
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
 
 </RelativeLayout>
